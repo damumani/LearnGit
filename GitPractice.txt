@@ -3,12 +3,15 @@ Learn How to use Git:-
   create new repository in <github> under "main"
 
 install git in your local system.
+
 open cmd prompt
   git config --global user.name "damumani"
   git config --global user.email "damumani96@gmail.com"
+
 create folder & open cmd prompt
   git clone https://github.com/damumani/LearnGit.git <repository link>
   cd /fileName
+
 Create new file in same location <untracked>
   git status    <untracked file>
   git add fileName.format <test1.txt>
@@ -16,8 +19,10 @@ Create new file in same location <untracked>
   git commit -m "messageforSetOfActionsPerformed"
   git push origin main    <push your local changes to github>
 Now newly created file is reflected in "github"
-now create new file in "github"
+
+Now create new file in "github"
   git pull
+
 New file synced with existing files
 
 Create New repository(Folder) in local
@@ -25,19 +30,37 @@ Create New repository(Folder) in local
   git add . <to add bulk of files to github>
   git commit -m "message"
   git origin main <we get some error: failed to push some refs to 'origin'>
+
 To resolve this error, create new repository in <github> & copy the repository link
   git remote add origin https://github.com/damumani/NewRepository.git <new repository link>
+
 To check branches in current main origin
   git branch
+
 We get *master , to Push or change branch name
   git push origin master
   git branch -M main
+
 Now we get branch name as *main
   git push origin main
 
 branch >>>> repository >>> files
 To check the branches
   git branch -a
+Create new branch under main branch, all main branch files are updated to new branch
+To navigate other branches,
+  git checkout xyz  <xyz - branchname> or 
+  git checkout -b xyz
+
+To merge all branches to main branch
+  git merge xyzbracnhName
+
+To Create new branch & push
+  git branch xyzbracnhName
+  git push origin xyzbracnhName
+
+
+
 
 
 
