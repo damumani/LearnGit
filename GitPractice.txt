@@ -7,7 +7,11 @@ create folder & open cmd
   git clone https://github.com/damumani/LearnGit.git
   cd /fileName
 Create new file in same location <untracked>
-  git status
+  git status    <untracked file>
   git add fileName.format <test1.txt>
+  git status    <added>
+  git commit -m "messageforSetOfActionsPerformed"
+  git push origin main
+  
 
 
