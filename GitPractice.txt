@@ -7,7 +7,7 @@ open cmd prompt
   git config --global user.name "damumani"
   git config --global user.email "damumani96@gmail.com"
 create folder & open cmd prompt
-  git clone https://github.com/damumani/LearnGit.git
+  git clone https://github.com/damumani/LearnGit.git <repository link>
   cd /fileName
 Create new file in same location <untracked>
   git status    <untracked file>
@@ -19,6 +19,25 @@ Now newly created file is reflected in "github"
 now create new file in "github"
   git pull
 New file synced with existing files
+
+Create New repository(Folder) in local
+  git init
+  git add . <to add bulk of files to github>
+  git commit -m "message"
+  git origin main <we get some error: failed to push some refs to 'origin'>
+To resolve this error, create new repository in <github> & copy the repository link
+  git remote add origin https://github.com/damumani/NewRepository.git <new repository link>
+To check branches in current main origin
+  git branch
+We get *master , to Push or change branch name
+  git push origin master
+  git branch -M main
+Now we get branch name as *main
+  git push origin main
+
+branch >>>> repository >>> files
+To check the branches
+  git branch -a
 
 
 
